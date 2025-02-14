@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+</head>
+<style>
+        /* Centering the heading */
+        body{
+            background-color: #B40800;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="0" y="20" font-family="Arial" font-size="20" fill="pink">love</text></svg>');
+            background-size: 50px 50px; /* Adjust size of 'love' text */
+        }
+        h1 {
+            color:aliceblue;
+            text-align: center;
+        }
+        .love-text {
+            font-size: 8px; /* Small font size for 'love' */
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Make sure it stays in the background */
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            pointer-events: none; /* Prevent interaction with the text */
+            z-index: -1; /* Ensure it stays behind the video */
+            pointer-events: none; /* Prevent interaction with the text */
+            animation: zoomInOut 5s infinite; 
+        }
+        @keyframes zoomInOut {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5); /* Zoom in */
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1); /* Zoom out */
+            }
+        }
+        /* Optional: Centering the video too */
+        video {
+            display: block;
+            margin: 0 auto; /* Centers the video */
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="love-text">
+        <span>love </span>
+    </div>
+    <!-- Video embed -->
+     <h1>Happy Valentine's Day</h1>
+    <video width="640" height="360" autoplay>
+        <source src="6800127-uhd_2160_4096_30fps.mp4" type="video/mp4"> <!-- Video file location -->
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

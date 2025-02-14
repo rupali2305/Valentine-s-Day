@@ -1,0 +1,70 @@
+*{
+    background-color: #B40800;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B40800;
+    text-align: center;
+}
+
+header {
+    
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+img {
+    height: 200px; /* Set desired height */
+    width: auto;  /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+.ask{
+    font-family: Arial, sans-serif;
+    color:aliceblue;
+    font-weight: bold;    
+}
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); } /* Zoom in */
+    100% { transform: scale(1); } /* Zoom out */
+}
+
+.button-set {
+    
+    border-radius: 8px;
+    animation: zoomEffect 1.5s infinite ease-in-out;
+}
+
+
+footer {
+   
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
